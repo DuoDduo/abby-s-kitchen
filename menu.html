@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <style>
+        *{
+            font-size: 17px;
+        }
+        .col-md-6{
+            font-weight: 600;
+        }
+        .h2{
+            font-weight: 900;
+            font-size: 25px;
+        }
+        .rod{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            margin: auto;
+            flex-direction: row;
+            padding: 40px;
+            gap: 15px;
+        }
+        @media (max-width:376px){
+            .rod{
+            display: grid;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            padding: 10px;
+            gap: 5px;
+            grid-template-columns: repeat(5,1fr);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container marketing">
+        <h1 style="font-weight: 900;">Menu</h1>
+
+        <div class="featurette-divider"></div>
+        <div>
+            <div style="display: flex; align-items: center; justify-content: center;"> <p><a class="btn btn-default bt" href="#gallery" role="button">View Dishes »</a></p></div>
+            <ul style="display: flex; justify-content: space-around; align-items: start; list-style-type: none;  padding: 20px;" class="h2">
+                <li>Item</li>
+                <li>Price</li>
+                <li>Description</li>
+                <li>Dietary Info</li>
+            </ul>
+        </div>
+        <h2 class="h2">Breakfast</h2>
+        <div ng-repeat= "menu in menus.breakfast">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Starter</h2>
+        <div ng-repeat= "menu in menus.starter">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Lunch</h2>
+        <div ng-repeat= "menu in menus.lunch">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Dinner</h2>
+        <div ng-repeat= "menu in menus.dinner">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Drinks</h2>
+        <div ng-repeat= "menu in menus.drinks">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Proteins</h2>
+        <div ng-repeat= "menu in menus.proteins">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Swallows</h2>
+        <div ng-repeat= "menu in menus.swallows">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Soups</h2>
+        <div ng-repeat= "menu in menus.soups">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <h2 class="h2">Special Dishes</h2>
+        <div ng-repeat= "menu in menus.special">
+            <div class="row rod">
+                <div class="col-md-6">{{menu.item}}</div>
+                <div class="col-md-6">{{menu.price | currency:"₦"}}</div>
+                <div class="col-md-6">{{menu.description}}</div>
+                <div class="col-md-6">{{menu.dietaryInfo}}</div>
+            </div>
+        </div>
+        <div class="featurette-divider"></div>
+    </div>
+</body>
+</html>

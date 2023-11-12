@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restaurant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="background" ng-controller="RegisterCtrl">
+        <div class="centering">
+            <form class="my-form" name="registerForm" ng-submit="submitForm()" novalidate>
+                <div class="signup-welcome-row">
+                    <h3>Sign Up!</h3>
+                </div>
+                <div class="socials-row">
+                    <a href="#" title="Use Google"><img src="./images/google.png" alt="Google">Use Google</a>
+                    <a href="#" title="Use Facebook"><img src="./images/facebook.png" alt="Facebook">Use Facebook</a>
+                </div>
+                <div class="divider">
+                    <span class="divider-line"></span>
+                    OR
+                    <span class="divider-line"></span>
+                </div>
+
+                <div class="my-form__content">
+                    <div class="text-field" >
+                        <input aria-label="Email" type="email" id="email" name="email" placeholder="Your Email" ng-model="user.email" required>
+                        <span class="error-message" ng-show="registerForm.email.$error.required">Email is required.</span>
+                        <span class="error-message" ng-show="registerForm.email.$error.email">Invalid email format.</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A7A2CB" fill="none" stroke-linecap="round" stroke-linejoin="round" style="bottom:10px ;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                            <path d="M3 7l9 6l9 -6" />
+                        </svg>
+                    </div>
+
+                    <div class="text-field">
+                        <label for="password">Password:</label>
+                        <input
+                            id="password"
+                            type="password"
+                            aria-label="Password"
+                            name="password"
+                            ng-model="user.password"
+                            ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/"
+                            required
+                        >
+                        <span class="error-message" ng-show="registerForm.password.$error.required">Password is required.</span>
+                        <span class="error-message" ng-show="registerForm.password.$error.pattern">
+                            Password must be at least 6 characters and include 1 letter and 1 number.
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="bottom:10px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                            <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                            <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                         </svg>
+                    </div>
+                    <div class="text-field">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input
+                            id="confirm-password"
+                            type="password"
+                            aria-label="Confirm Password"
+                            name="confirmPassword"
+                            ng-model="user.confirmPassword"
+                            ng-change="checkPasswordMatch()"
+                            required
+                        >
+                        <span class="error-message" ng-show="registerForm.confirmPassword.$error.required">
+                            Confirm Password is required.
+                        </span>
+                        <span class="error-message" ng-show="errorMessage.passwordMismatch">
+                            Passwords do not match.
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-lock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="bottom: 10px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                            <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                            <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+                         </svg>
+                    </div>
+                    <p id="password-error-message" class="error-message" ng-show="errorMessage.passwordMismatch">
+                        Passwords do not match.
+                    </p>
+                    <p id="form-error-message" class="error-message" ng-show="errorMessage.missingFields">
+                        Please fill in all required details.
+                    </p>
+
+                    <button type="submit" class="my-form__button">Sign-Up</button>
+
+                </div>
+                <div class="my-form__actions">
+                    <div>
+                        By registering you agree to our
+                        <a href="#" title="Reset Password">Terms</a>
+                        and <a href="#" title="Reset Password">Privacy</a>
+                    </div>
+                    <div class="my-form__signin">
+                        <a href="#login" title="Sign In">Sign-in</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
+    <script src="./js/script.js"></script> <!-- Make sure to include your AngularJS app script -->
+</body>
+</html>

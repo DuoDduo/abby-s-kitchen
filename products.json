@@ -1,0 +1,226 @@
+[
+  {
+    "productId": 1,
+    "productName": "Red Wine",
+    "price": 1000,
+    "image": "drink.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  },
+  {
+    "productId": 2,
+    "productName": "Jollof Rice and Chicken",
+    "price": 2500,
+    "image": "jollof.jpg",
+    "description": "Available",
+    "category": "African"
+  },
+  {
+    "productId": 3,
+    "productName": "White Rice and Stew",
+    "price": 2000,
+    "image": "whiterice.jpg",
+    "description": "Available",
+    "category": "African"
+  },
+  {
+    "productId": 4,
+    "productName": "Fried Rice",
+    "price": 2200,
+    "image": "sausage-fried-rice-with-tomatoes-carrots-shiitake-mushrooms-plate.jpg",
+    "description": "Available",
+    "category": "African"
+  },
+  {
+    "productId": 5,
+    "productName": "Doughnut",
+    "price": 700,
+    "image": "doughnut.jpg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 6,
+    "productName": "Grape Cocktail",
+    "price": 1000,
+    "image": "front-view-cocktail-with-grape-decor.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  },
+  {
+    "productId": 7,
+    "productName": "Orange Juice",
+    "price": 800,
+    "image": "front-view-orange-juice-with-slice-orange.jpg",
+    "description": "Unavailable",
+    "category": "Drinks"
+  },
+  {
+    "productId": 8,
+    "productName": "Walnut drink",
+    "price": 1500,
+    "image": "front-view-wine-glasses-fresh-grapes-walnuts-yellow-cheese-wood-board-overturned-bottle-dark-background.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  },
+  {
+    "productId": 9,
+    "productName": "Hamburger",
+    "price": 1000,
+    "image": "images - 2022-03-16T111651.565.jpeg",
+    "description": "Unavailable",
+    "category": "Pastries"
+  },
+  {
+    "productId": 10,
+    "productName": "Italian Pasta",
+    "price": 2000,
+    "image": "spaghetti-black-cup-with-tomatoes-lettuce.jpg",
+    "description": "Available",
+    "category": "Foreign"
+  },
+  {
+    "productId": 11,
+    "productName": "Chinese minced-pork",
+    "price": 3000,
+    "image": "thai-food-spicy-minced-pork-serve-with-side-dishes.jpg",
+    "description": "Available",
+    "category": "Foreign"
+  },
+  {
+    "productId": 12,
+    "productName": "Strawberry Yoghurt",
+    "price": 2300,
+    "image": "closeup-shot-strawberry-yogurt-with-strawberries-black-table.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  },
+  {
+    "productId": 13,
+    "productName": "Parfait",
+    "price": 1900,
+    "image": "side-view-parfait-with-yogurt-muesli-raspberry.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  },
+  {
+    "productId": 14,
+    "productName": "Pakistani Kebab",
+    "price": 3500,
+    "image": "flat-lay-assortment-tasty-kebab-with-tomatoes-herbs.jpg",
+    "description": "Available",
+    "category": "Foreign"
+  },
+  {
+    "productId": 15,
+    "productName": "Indian Beyti Kebab",
+    "price": 4000,
+    "image": "/top-view-beyti-kebab-served-with-ayran-pickles.jpg",
+    "description": "Available",
+    "category": "Foreign"
+  },
+  {
+    "productId": 16,
+    "productName": "Chicken Skewers",
+    "price": 1200,
+    "image": "chicken-skewers-with-slices-apples-chili-top-view.jpg",
+    "description": "Unavailable",
+    "category": "Combo"
+  },
+  {
+    "productId": 17,
+    "productName": "Meat Sauce + Vegetable",
+    "price": 3000,
+    "image": "top-close-view-delicious-meat-sauce-with-greens-sliced-potatoes-dark-surface-sauce-soup-meal-food-dinner-dish.jpg",
+    "description": "Available",
+    "category": "Combo"
+  },
+  {
+    "productId": 18,
+    "productName": "Pasta + Salad + Cocktail",
+    "price": 4500,
+    "image": "closeup-bowls-cooked-pasta-with-salads-delicious-cocktails-fried-vegetables-table.jpg",
+    "description": "Available",
+    "category": "Combo"
+  },
+  {
+    "productId": 19,
+    "productName": "Breast Duck + Red Wine",
+    "price": 5000,
+    "image": "fine-cuisine-luxury-lounge-breast-duck-with-red-wine.jpg",
+    "description": "Available",
+    "category": "Combo"
+  },
+  {
+    "productId": 20,
+    "productName": "Rice + Orange Juice",
+    "price": 2700,
+    "image": "front-view-first-second-main-dish-lentil-soup-vegetable-salad-rice-with-meat-juice-table.jpg",
+    "description": "Unavailable",
+    "category": "Combo"
+  },
+  {
+    "productId": 21,
+    "productName": "Grilled Sandwich",
+    "price": 2100,
+    "image": "grilled-sandwich-with-bacon-fried-egg-tomato-lettuce-served-wooden-cutting-board.jpg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 22,
+    "productName": "Chicken and Chips",
+    "price": 2500,
+    "image": "melissa-walker-horn-NkwNp3ho-Qw-unsplash.jpg",
+    "description": "Available",
+    "category": "Combo"
+  },
+  {
+    "productId": 23,
+    "productName": "Chin-Chin",
+    "price": 900,
+    "image": "images (64).jpeg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 24,
+    "productName": "Meat Pie",
+    "price": 700,
+    "image": "images (73).jpeg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 25,
+    "productName": "Chocolate filled Doughnut",
+    "price": 750,
+    "image": "images (74).jpeg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 26,
+    "productName": "Crispy Rolls",
+    "price": 650,
+    "image": "snack-715534_1280.jpg",
+    "description": "Available",
+    "category": "Pastries"
+  },
+  {
+    "productId": 27,
+    "productName": "Macaroni",
+    "price": 1000,
+    "image": "coffee.jpg",
+    "description": "Unavailable",
+    "category": "Foreign"
+  },
+  {
+    "productId": 28,
+    "productName": "Granola",
+    "price": 1200,
+    "image": "front-view-granola-with-fruits-nuts-glass-with-strawberries-pink-bowl-jam.jpg",
+    "description": "Available",
+    "category": "Drinks"
+  }
+]

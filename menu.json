@@ -1,0 +1,209 @@
+{
+    "breakfast": [
+      {
+        "item": "White Rice",
+        "price": 1000,
+        "description": "Steamed white rice served with a side of your choice.",
+        "dietaryInfo": "Vegan"
+      },
+      {
+        "item": "Bagel",
+        "price": 750,
+        "description": "Freshly baked bagel with various topping options.",
+        "dietaryInfo": "Vegetarian"
+      },
+      {
+        "item": "Croissant",
+        "price": 900,
+        "description": "Flaky and buttery croissant, perfect for breakfast.",
+        "dietaryInfo": "Vegetarian"
+      },
+      {
+        "item": "Walnut Drink",
+        "price": 600,
+        "description": "Nutty and refreshing walnut drink.",
+        "dietaryInfo": "Vegan"
+      },
+      {
+        "item": "Coffee",
+        "price": 1000,
+        "description": "Freshly brewed coffee with various options.",
+        "dietaryInfo": "Vegan"
+      }
+    ],
+    "starter": [
+      {
+        "item": "Fried Rice",
+        "price": 2200,
+        "description": "Savory fried rice with a mix of vegetables and your choice of protein.",
+        "dietaryInfo": "Gluten-Free"
+      },
+      {
+        "item": "Meat Pie",
+        "price": 750,
+        "description": "Flaky pastry filled with seasoned meat and vegetables.",
+        "dietaryInfo": "Non-Vegetarian"
+      },
+      {
+        "item": "Doughnut",
+        "price": 700,
+        "description": "Sweet and fluffy doughnut with various glaze options.",
+        "dietaryInfo": "Vegetarian"
+      },
+      {
+        "item": "Chicken and Chips",
+        "price": 1500,
+        "description": "Crispy chicken tenders served with golden fries.",
+        "dietaryInfo": "Non-Vegetarian"
+      },
+      {
+        "item": "Fries",
+        "price": 1200,
+        "description": "Classic French fries, perfect as a snack or side.",
+        "dietaryInfo": "Vegan"
+      }
+    ],
+    "lunch": [
+          {
+            "item": "Caesar Salad",
+            "price": 2000,
+            "description": "Fresh romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+            "dietaryInfo": "Vegetarian"
+          },
+          {
+            "item": "Grilled Salmon",
+            "price": 2500,
+            "description": "Grilled salmon fillet served with steamed vegetables and lemon butter sauce.",
+            "dietaryInfo": "Gluten-Free, Non-Vegetarian"
+          },
+          {
+            "item": "Vegetable Curry",
+            "price": 1700,
+            "description": "A flavorful blend of seasonal vegetables in a rich curry sauce served with rice.",
+            "dietaryInfo": "Vegan, Gluten-Free"
+          }
+    ],
+    "special": [
+        {
+        "item": "Lobster Bisque",
+        "price": 1700,
+        "description": "Creamy and luxurious lobster bisque soup with chunks of lobster meat.",
+        "dietaryInfo": "Non-Vegetarian"
+        },
+        {
+        "item": "Vegan Sushi Platter",
+        "price": 1600,
+        "description": "Assorted vegan sushi rolls with avocado, cucumber, and other fresh ingredients.",
+        "dietaryInfo": "Vegan, Gluten-Free"
+        },
+        {
+        "item": "Tandoori Chicken",
+        "price": 1900,
+        "description": "Marinated chicken cooked in a tandoor oven and served with naan bread.",
+        "dietaryInfo": "Non-Vegetarian"
+        }
+    ],
+    "dinner": [
+            {
+            "item": "Grilled Steak",
+            "price": 1800,
+            "description": "Juicy steak seasoned and grilled to perfection.",
+            "dietaryInfo": "Non-Vegetarian"
+            },
+            {
+            "item": "Salmon Fillet",
+            "price": 2000,
+            "description": "Pan-seared salmon fillet served with lemon dill sauce.",
+            "dietaryInfo": "Non-Vegetarian"
+            },
+            {
+            "item": "Vegetable Curry",
+            "price": 1500,
+            "description": "A flavorful blend of seasonal vegetables in a rich curry sauce served with rice.",
+            "dietaryInfo": "Vegan, Gluten-Free"
+            }
+    ],
+    "soups": [
+        {
+        "item": "Tomato Basil Soup",
+        "price": 1900,
+        "description": "Creamy tomato soup with fresh basil leaves.",
+        "dietaryInfo": "Vegetarian"
+        },
+        {
+        "item": "Lentil Soup",
+        "price": 900,
+        "description": "Hearty lentil soup with carrots, celery, and spices.",
+        "dietaryInfo": "Vegan, Gluten-Free"
+        },
+        {
+        "item": "Chicken Noodle Soup",
+        "price": 2500,
+        "description": "Classic chicken noodle soup with tender chicken and vegetables.",
+        "dietaryInfo": "Non-Vegetarian"
+        }
+    ],
+    "drinks": [
+        {
+        "item": "Cocktail",
+        "price": 900,
+        "description": "Handcrafted cocktails with a variety of spirits and flavors.",
+        "dietaryInfo": "Alcoholic"
+        },
+        {
+        "item": "Beverages",
+        "price": 950,
+        "description": "A selection of non-alcoholic beverages and soft drinks.",
+        "dietaryInfo": "Non-Alcoholic"
+        },
+        {
+        "item": "Orange Juice",
+        "price": 750,
+        "description": "Freshly squeezed orange juice, a great way to start your day.",
+        "dietaryInfo": "Vegan, Gluten-Free"
+        }
+    ],
+    "proteins": [
+        {
+        "item": "Beef",
+        "price": 1200,
+        "description": "Tender and succulent beef cuts prepared to your liking.",
+        "dietaryInfo": "Non-Vegetarian"
+        },
+        {
+        "item": "Pork",
+        "price": 900,
+        "description": "Savory and seasoned pork dishes that will satisfy your cravings.",
+        "dietaryInfo": "Non-Vegetarian"
+        },
+        {
+        "item": "Chicken",
+        "price": 1100,
+        "description": "Delicious chicken recipes cooked to perfection.",
+        "dietaryInfo": "Non-Vegetarian"
+        }
+    ],
+    "swallows": [
+        {
+        "item": "Amala",
+        "price": 500,
+        "description": "Traditional African dish made from yam flour.",
+        "dietaryInfo": "Vegan"
+        },
+        {
+        "item": "Semo",
+        "price": 600,
+        "description": "Nigerian swallow made from semolina flour.",
+        "dietaryInfo": "Vegan"
+        },
+        {
+        "item": "Pounded Yam",
+        "price": 1200,
+        "description": "Pounded yam served with a choice of soup.",
+        "dietaryInfo": "Vegan"
+        }
+    ]
+    
+    }
+    
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/food.css" /> -->
+    <link rel="stylesheet" href="./css/product.css">
+    <script
+      src="https://kit.fontawesome.com/cbba115a45.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container marketing" style="font-weight: 900">
+      <h1>More Foods</h1>
+    </div>
+    <div style="display:flex; justify-content:center; align-items: center;gap:10px; flex-direction: column;">
+      <div style="display: flex;">
+      <div style="display: flex;" >
+      <input type="text" id="product-search" placeholder="Search by product name">
+    <button id="search-button" class="btn-primary">Search</button>
+      </div>
+      <div class="btn" style="display:flex; justify-content:flex-end; align-items: center; padding: 10px 0;">
+      <div id="cart-icon" onclick="toggleCart()">
+        <i class="fa-solid fa-cart-shopping" style="color: #fe9703; " ></i><span id="cart-badge">0</span>
+    </div>
+    
+    </div>
+      </div>
+      <div>
+        <p style="color: red; font-style: italic;">*click on add to cart multiple times to choose quantity</p>
+      </div>
+    </div>
+
+
+      <div class="contaner">
+        <div id="page">
+           
+    <!-- Add this section to your HTML body -->
+    <div class="filter-section" style="display:flex; justify-content:center;gap: 20px;">
+      
+      <div><label for="min-price">Min Price:</label>
+        <input type="number" id="min-price" placeholder="Min Price" min="0"></div>
+      <div><label for="max-price">Max Price:</label>
+        <input type="number" id="max-price" placeholder="Max Price" min="0"></div>
+      <button id="filter-button" class="btn-primary">Filter</button>
+    </div>
+    
+    <!-- //the fact that you are doing something for the first time doesn't mean it should be bad -->
+    <!-- start behaving like where you want to be -->
+    <!-- true riches is having access to the heart of men -->
+    <!-- in a world where your replacement is everywhere , it is wisdom to be humble -->
+    <div class="filter-section filter-box">
+      <!-- <h3>Filter Products by Category:</h3> -->
+      <ul><li><a href="#" class="category-filter-link filt activ lin" data-category="all">All</a></li>
+       <li> <a href="#" class="category-filter-link filt lin" data-category="African">African</a></li>
+        <!-- Add more links for other categories as needed -->
+      <li>  <a href="#" class="category-filter-link filt lin" data-category="Foreign">Foreign</a></li>
+       <li> <a href="#" class="category-filter-link filt lin" data-category="Drinks">Drinks</a></li>
+       <li> <a href="#" class="category-filter-link filt lin" data-category="Pastries">Pastries</a></li>
+        <li><a href="#" class="category-filter-link filt lin" data-category="Combo">Combo</a></li>
+    </ul>
+    </div>
+    
+    <!-- Product List -->
+          <div class="product-list" id="product-list">
+            <!-- JSON product data will be displayed here -->
+          </div>
+        
+        </div>
+      
+        <button id="continue-shopping" onclick="continueShopping()" style="display: none" class="btn-primary">Continue Shopping</button>
+          <div id="cart-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleCart()">&times;</span>
+                <h2>Cart</h2>
+                <ul id="cart-items">
+                    <!-- Cart items will be added here dynamically using JavaScript -->
+                </ul>
+                <p>Total Price: <span id="cart-total-price" style="color: #fe0003;">$0.00</span></p>
+                <button id="pay-now" onclick="showPaymentForm()" class="btn-primary">Pay Now</button>
+                <p id="payment-processing-message" style="display: none;">Processing Payment...</p>
+        
+               
+                    <form  id="payment-form" style="display: none;">
+                      <h3>Enter Card Details</h3>
+                      <label for="card-number">Card Number:</label>
+                      <input type="text" id="card-number" placeholder="Card Number(10-digits)" required>
+          
+                      <label for="exp-date">Expiration Date:</label>
+                      <input type="text" id="exp-date" placeholder="MM/YYYY" required>
+          
+                      <label for="cvv">CVV:</label>
+                      <input type="text" id="cvv" placeholder="CVV(3-digits)" required>
+          
+                      <button type="button" id="process-payment" class="btn-primary">Process Payment</button>
+                  </form>
+               
+            </div>
+        </div>
+        
+         
+          <div id="empty-cart-message" style="display: none;">
+            <p>Your cart is empty. Please add products to your cart before proceeding to payment.</p>
+            <button id="back-to-products" class="btn-primary">Back to Products</button>
+        </div>
+      </div>
+        
+   <script src="./js/product.js"></script>
+  </body>
+</html>

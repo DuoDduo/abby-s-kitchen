@@ -1,0 +1,82 @@
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tabs a.active {
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content p{
+    font-size: 16px; 
+}
+.tab-content--active {
+  display: block;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tabs > a {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-mid);
+  text-align: left;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabs > a img {
+  height: 20px;
+  width: 20px;
+}
+
+.tabs > .active {
+  font-weight: 700;
+  outline: none;
+  color: var(--gray-dark);
+  margin-bottom: -1px;
+  border-bottom: 1px solid var(--gray-dark);
+}
+
+.tabs > a > svg {
+  stroke: var(--gray-mid);
+}
+
+.tabs > .active > svg {
+  stroke: var(--gray-dark);
+}
+.tabs a {
+    font-size: 23px;
+    color: #fe9703;
+  }
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.content > .title {
+  font-weight: 700;
+}
+
+.content > .description {
+  font-size: smaller;
+}

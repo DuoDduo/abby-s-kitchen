@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		input::placeholder{
+			color: #fe9307;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="container marketing">
+		<h1>Gallery</h1>
+		<div class="featurette-divider">
+			</div>
+			<div style="display: flex; align-items: center; justify-content: center; color: #fe9307;padding: 15px; flex-direction: column;">
+				<p style="color: red; font-style: italic;">*click on images for their names</p>
+				<input type="text" ng-model="searchText" placeholder="Search Dish from Menu by name" style="
+				background-color:transparent ;outline: none; padding:10px;border: 1px solid #ccc; width: 25%;" >
+			</div>
+		<div class="row">
+			<div ng-repeat="gallery in filteredGallerys = (gallerys | filter: searchText)">
+				
+				<div class="col-md-4 gallery"> 
+				<div class="container1">
+					<img ng-src="{{gallery.item}}" class="img-responsive img_hover_{{gallery.id}}">
+					<div class="overlay_{{gallery.id}}">
+						<div class="text">{{gallery.name}}</div>
+					</div>
+				</div>
+				</div>
+					
+			</div>
+		</div>
+		<div class="featurette-divider">
+			</div>
+	</div>
+	
+	
+		
+		
+	</body>
+	</html>

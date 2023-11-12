@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/faqs.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="tabs">
+                <a id="tab1" href="#tab1">
+                    FAQ'S
+                </a>
+                <a id="tab2" href="#tab2">
+                    Terms of use
+                </a>
+                <a id="tab3" name="file" href="#tab3">
+                    Privacy policy
+                </a>
+            </div>
+        </header>
+        <div class="tab-content-wrapper">
+            <div id="tab1-content" class="tab-content">
+                <div class="faq-container ">
+                    <h3>FAQ'S</h3>
+                    <details>
+                      <summary>
+                        <span class="faq-title">
+                          How can I subscribe to your newsletter for kitchen tips and recipes?
+                        </span>
+                        <img src="./images/plus.svg" class="expand-icon" />
+                      </summary>        
+                      <div class="faq-content">
+                        To subscribe to our newsletter, simply scroll to the bottom of our website and enter your email address in the "Subscribe" box. Click "Subscribe," and you'll start receiving our latest kitchen tips and recipes right in your inbox.
+                      </div>
+                    </details>
+                    <details>
+                      <summary>
+                        <span class="faq-title">
+                          How can I follow your social media accounts for the latest updates and recipes?
+                        </span>
+                        <img src="./images/plus.svg" class="expand-icon" />
+                      </summary>        
+                      <div class="faq-content">
+                        You can easily follow us on social media by clicking on the social media icons at the top or bottom of our website. Stay connected for our latest updates, recipes, and kitchen inspiration.
+                      </div>
+                    </details>
+                    <details>
+                      <summary>
+                        <span class="faq-title"> What types of food products do you offer on your website?</span>
+                        <img src="./images/plus.svg" class="expand-icon" />
+                      </summary>        
+                      <div class="faq-content">We offer a wide range of food products, including african, foreign, pastries,drinks and more. Explore our "Shop Food" section to browse our selection.</div>
+                    </details>
+                    <details>
+                      <summary>
+                        <span class="faq-title">Are your food products sourced locally or internationally?</span>
+                        <img src="./images/plus.svg" class="expand-icon" />
+                      </summary>        
+                      <div class="faq-content">We source our food products from a combination of local and international suppliers. Our goal is to provide you with dishes made with the freshest and highest-quality ingredients..</div>
+                    </details>
+                    <details>
+                      <summary>
+                        <span class="faq-title">How do I contact customer support if I have questions or issues with my food product orders?</span>
+                        <img src="./images/plus.svg" class="expand-icon" />
+                      </summary>        
+                      <div class="faq-content"> If you have any questions or issues with your food product orders, please click the "Send Feedback Button" on this page to reach our customer support team. We're here to assist you.</div>
+                    </details>
+                  </div>
+            </div>
+            <div id="tab2-content" class="tab-content">
+                <div class="faq-container ">
+                    <h3>Terms of Use</h3>
+                    <section id="terms">
+                        
+                        <p>
+                            Welcome to Abby's Kitchen By accessing and using our website, you agree to comply with and be bound by the following terms of use. Please read these terms carefully before using our website.<br></br>
+
+                            Acceptance of Terms: By accessing or using our website, you acknowledge that you have read, understood, and agree to these terms of use. If you do not agree with these terms, please do not use our website.
+                            <br></br>
+                            Website Content: All content on our website, including text, images, videos, recipes, and other materials, is for informational and educational purposes only. It is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or use our content without our prior written consent.<br></br>
+
+                            User Conduct: When using our website, you agree to abide by applicable laws and regulations. You may not engage in any activity that disrupts or interferes with the functionality of our website or violates the rights of others.<br></br>
+
+                            User Accounts: If you create an account on our website, you are responsible for maintaining the confidentiality of your account information and for any activities that occur under your account. You must promptly notify us of any unauthorized use of your account.<br></br>
+
+                            Product Purchases: If you make purchases through our website, you agree to provide accurate and complete information and to comply with our payment and shipping policies.<br></br>
+
+                            Third-Party Links: Our website may contain links to third-party websites for your convenience. We do not endorse or control these websites and are not responsible for their content or practices. Use third-party websites at your own risk.<br></br>
+                            Changes to Terms: We may update these terms of use at any time without prior notice. Please review these terms periodically for changes. Your continued use of our website after any changes are made constitutes your acceptance of the revised terms.
+                            <br></br>
+                            Governing Law: These terms of use shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any disputes arising from your use of our website shall be subject to the exclusive jurisdiction of the courts in [Jurisdiction].
+                        </p>
+                    </section>
+                  </div>
+            </div>
+            <div id="tab3-content" class="tab-content">
+                <div class="faq-container ">
+                    <h3>Privacy Policy</h3>
+                    <section id="terms">
+                        
+                        <p>
+                            Our Privacy Policy outlines how Abby's Kitchen collects, uses, and protects your personal information. We are committed to maintaining the privacy and security of your data. Please review our Privacy Policy to understand:
+
+                            What information we collect from you and how we collect it.
+                            How we use your information, including for marketing and communication purposes.
+                            How we protect your information and maintain its confidentiality.
+                            Your choices regarding the use of your data, including how to update or delete your information.
+                            How we handle cookies and tracking technologies.
+                            Third-party services and links.
+                            Changes to our Privacy Policy.
+                            By using our website, you consent to the practices outlined in our Privacy Policy. If you have any questions or concerns about your privacy or our data practices, please contact us at ologeabigail2005@gmail.com .
+                        </p>
+                    </section>
+                  </div>
+            </div>
+        </div>
+    </div>  
+    <div class="featurette-divider"></div>
+    <script>
+        // Function to switch tabs
+        function switchTab(tabId) {
+          // Hide all tab contents
+          const tabContents = document.querySelectorAll('.tab-content');
+          tabContents.forEach((content) => {
+            content.classList.remove('active');
+          });
+      
+          // Deactivate all tab links
+          const tabLinks = document.querySelectorAll('.tabs a');
+          tabLinks.forEach((link) => {
+            link.classList.remove('active');
+          });
+      
+          // Show the selected tab content
+          const selectedTab = document.getElementById(tabId + '-content');
+          selectedTab.classList.add('active');
+      
+          // Activate the clicked tab link
+          const selectedTabLink = document.getElementById(tabId);
+          selectedTabLink.classList.add('active');
+        }
+      
+        // Add click event listeners to the tab links
+        const tabLinks = document.querySelectorAll('.tabs a');
+        tabLinks.forEach((link) => {
+          link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const tabId = link.getAttribute('href').substr(1); // Get the target tab id
+            switchTab(tabId);
+          });
+        });
+      
+        // Initially, display the first tab
+        switchTab('tab1');
+    </script>
+      
+</body>
+</html>

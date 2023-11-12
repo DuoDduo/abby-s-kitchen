@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Document</title> -->
+  <script src="https://kit.fontawesome.com/cbba115a45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<div class="container">
+<h1>Contact Us</h1>
+<div class="featurette-divider">
+  </div>
+<main >
+    <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact" >
+      <div class="container mt-5 mb-3">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Our Address</h3>
+              <p>3, Oloruntele Hilltop, Olomore Abeokuta </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="fas fa-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ologeabigail2005@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="fa-solid fa-phone"></i>
+              <h3>Call Us</h3>
+              <p>+234 903 661 4179</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+          <div class="featurette-divider"></div>
+       
+    </section><!-- End Contact Section -->
+
+</main>
+
+
+<!-- End #main -->
+
+  <div class=" row rop" >
+    <div style="display: flex; align-items: center; justify-content: center; font-weight: 900;"><h2>Send Feedback</h2></div>
+  
+    <div class="col-lg-12">
+      <form action="" method="post" role="form" class="email-form">
+        
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class=" form-group text-center mt-3 " style="display: flex; align-items: center;justify-content: center;"><button type="submit">Send Message</button></div>
+        <!-- <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div> -->
+        
+      </form>
+    </div>
+
+  </div>
+  <div class="featurette-divider"></div>
+</div>
+
+   
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+
+  <script>
+    
+
+
+
+
+class Accordion {
+    constructor(el) {
+      this.el = el;
+      this.summary = el.querySelector('summary');
+      this.content = el.querySelector('.faq-content');
+      this.expandIcon = this.summary.querySelector('.expand-icon')
+      this.animation = null;
+      this.isClosing = false;
+      this.isExpanding = false;
+      this.summary.addEventListener('click', (e) => this.onClick(e));
+    }
+  
+    onClick(e) {
+      e.preventDefault();
+      this.el.style.overflow = 'hidden';
+
+      if (this.isClosing || !this.el.open) {
+        this.open();
+      } else if (this.isExpanding || this.el.open) {
+        this.shrink();
+      }
+    }
+  
+    shrink() {
+      this.isClosing = true;
+
+      const startHeight = `${this.el.offsetHeight}px`;
+      const endHeight = `${this.summary.offsetHeight}px`;
+
+      if (this.animation) {
+        this.animation.cancel();
+      }
+      
+      this.animation = this.el.animate({
+        height: [startHeight, endHeight]
+      }, {
+        duration: 400,
+        easing: 'ease-out'
+      });
+
+      this.animation.onfinish = () => {
+        this.expandIcon.setAttribute('src', './images/plus.svg');
+        return this.onAnimationFinish(false);
+      }
+      this.animation.oncancel = () => {
+        this.expandIcon.setAttribute('src', './images/plus.svg');
+        return this.isClosing = false;
+      }
+    }
+  
+    open() {
+      this.el.style.height = `${this.el.offsetHeight}px`;
+      this.el.open = true;
+      window.requestAnimationFrame(() => this.expand());
+    }
+  
+    expand() {
+      this.isExpanding = true;
+
+      const startHeight = `${this.el.offsetHeight}px`;
+      const endHeight = `${this.summary.offsetHeight + 
+                           this.content.offsetHeight}px`;
+
+      if (this.animation) {
+        this.animation.cancel();
+      }
+      
+      this.animation = this.el.animate({
+        height: [startHeight, endHeight]
+      }, {
+        duration: 350,
+        easing: 'ease-out'
+      });
+
+      this.animation.onfinish = () => {
+        this.expandIcon.setAttribute(
+            'src',
+            './images/minus.svg'
+        );
+        return this.onAnimationFinish(true);
+      }
+      this.animation.oncancel = () => {
+        this.expandIcon.setAttribute(
+            'src',
+            './images/minus.svg'
+        );
+        return this.isExpanding = false;
+      }
+    }
+  
+    onAnimationFinish(open) {
+      this.el.open = open;
+      this.animation = null;
+      this.isClosing = false;
+      this.isExpanding = false;
+      this.el.style.height = this.el.style.overflow = '';
+    }
+  }
+  
+  document.querySelectorAll('details').forEach((el) => {
+    new Accordion(el);
+  });
+
+// Get the "Send Message" button and the form element
+const sendMessageButton = document.querySelector('.email-form button');
+  const emailForm = document.querySelector('.email-form');
+
+  // Add a submit event listener to the form
+  emailForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Perform form validation
+    if (validateForm()) {
+      // If the form is valid, simulate message sending
+      simulateMessageSending();
+    }
+  });
+
+  // Function to validate the form fields
+  function validateForm() {
+    const nameInput = document.querySelector('#name');
+    const emailInput = document.querySelector('#email');
+    const subjectInput = document.querySelector('#subject');
+    const messageInput = document.querySelector('textarea[name="message"]');
+
+    // Simple email validation regex
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    // Validate each field
+    if (nameInput.value.trim() === '') {
+      alert('Please enter your name.');
+      return false;
+    }
+
+    if (!emailRegex.test(emailInput.value.trim())) {
+      alert('Please enter a valid email address.');
+      return false;
+    }
+
+    if (subjectInput.value.trim() === '') {
+      alert('Please enter a subject.');
+      return false;
+    }
+
+    if (messageInput.value.trim() === '') {
+      alert('Please enter your message.');
+      return false;
+    }
+
+    // All fields are valid
+    return true;
+  }
+
+  // Function to simulate message sending and display the alert
+  function simulateMessageSending() {
+    // You can replace this with your actual message sending logic
+    // For now, we'll simulate a successful message sending after a short delay
+    setTimeout(function () {
+      // Display an alert indicating that the feedback was successfully sent
+      alert('Feedback successfully sent! Thank you for your message.');
+
+      // Optionally, you can clear the form fields after successful submission
+      clearFormFields();
+    }, 1000); // Adjust the delay as needed
+  }
+
+  // Function to clear the form fields
+  function clearFormFields() {
+    document.querySelector('#name').value = '';
+    document.querySelector('#email').value = '';
+    document.querySelector('#subject').value = '';
+    document.querySelector('textarea[name="message"]').value = '';
+  }
+  </script>
+</body>
+</html>
