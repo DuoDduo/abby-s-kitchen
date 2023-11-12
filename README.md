@@ -1,2 +1,2 @@
 # restaurant
-Restaurant website build with angularjs and bootstrap3
+Restaurant website
